@@ -1,0 +1,282 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*Сброс стилей*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+html{height:100%}
+body{line-height:1}
+ol,ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}
+table{border-collapse:collapse;border-spacing:0}
+/*Конец сброса стилей*/
+
+/*Общие настройки*/
+@font-face {
+	font-family: 'Vinque'; 
+	src: url("../fonts/ofont.ru_Vinque Rg.ttf"); 
+}
+
+body {
+	color: white;
+	font-size: 32px;
+	font-family: 'Vinque';
+	line-height: 61px;
+	font-weight: 600px;
+	box-sizing: border-box;
+	text-shadow: 1px 1px 4px black;
+	background-color: rgba(51,51,51,1.00);
+}
+
+section {
+	height: 101vh;
+	width: 100vw;
+	margin: -1vh -1vw 0;
+}
+/*Конец общих настроек*/
+
+/*Стили первого блока*/
+.startBlock {
+	transition-duration: 1s;
+	box-sizing: border-box;
+	position: relative;
+	color: white;
+	text-align: center;
+	background-image: url("../images/first block bg.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.startBlock:hover {
+	transform: scale(1.025);
+}
+
+.firstBlockWords{
+	box-sizing: border-box;
+	height: 100%;
+	padding: 25vh;
+}
+
+.firstWords {
+	font-size: 5vw;
+	margin-bottom: 5vh;
+}
+
+.jiraiyaQuote {
+	font-size: 4vw;
+	line-height: 10vh;
+}
+
+.paymon {	
+	box-sizing: border-box;
+	display: none;
+	position: absolute;
+	bottom: 0;
+}
+
+.paymonImage {
+	height: 50vh;
+	margin-right: 10vw;
+}
+
+.paymonImageWrapper {
+	text-align: right;
+}
+
+.paymonSpell {
+	font-size: 3vh;
+	padding: 0 10vw 5vh;
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 100%);
+}
+
+.paymonName {
+	padding-top: 2vh;
+	color: rgba(246, 205, 35, 1);
+}
+
+.paymonLine {
+	height: 3px;
+	background-color: rgba(246, 205, 35, 1);
+	margin-bottom: 2vh;
+}
+/*Клнец стилей первого блока*/
+
+/*Стили второго блока*/
+.dotaBlock {
+	box-sizing: border-box;
+	position: relative;
+	color: white;
+	text-align: center;
+	font-size: 5vh;
+	line-height: 9vh;
+}
+
+.firstDotaWords {
+	display: block;
+	order: 0;
+	position: absolute;
+	top: 0;
+	box-sizing: border-box;
+	height: 100%;
+	padding: 10vh 10vw;
+	border-spacing: 100vh;
+	background-image: url("../images/dota bg 1.png");
+	background-repeat: no-repeat;
+	background-size: cover;	
+	background-position: center;
+}
+
+.secondDotaWords {
+	transition-duration: 1s;
+	order: 0;
+	display: none;
+	position: absolute;
+	top: 0;
+	box-sizing: border-box;
+	height: 100%;
+	padding: 10vh 10vw;
+	border-spacing: 100vh;
+	background-image: url("../images/dota bg 2.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.balanar {
+	transition-duration: 1s;
+	order: 1;
+	position: absolute;
+	width: 10vw;
+	bottom: 5vh;
+	left: 3vw;
+}
+
+.balanar:hover {
+	transform: scale(.9);
+}
+
+.paymon2 {	
+	display: none;
+	box-sizing: border-box;
+	position: absolute;
+	bottom: 0;
+}
+
+.paymon2Image {
+	height: 50vh;
+	margin-left: 10vw;
+}
+
+.paymon2ImageWrapper {
+	text-align: left;
+}
+
+.paymon2Spell {
+	font-size: 3vh;
+	line-height: 6vh;
+	padding: 0 10vw 2vh;
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 100%);
+}
+
+.paymon2Name {
+	padding-top: 2vh;
+	color: rgba(246, 205, 35, 1);
+}
+
+.paymon2Line {
+	height: 3px;
+	background-color: rgba(246, 205, 35, 1);
+	margin-bottom: 2vh;
+}
+
+.whatSign {
+	display: none;
+	position: absolute;
+	width: 2vw;
+	top: 3vh;
+	right: 2vw;
+}
+/*Конец стилей второго блока*/
+
+
+/*Стили третьего блока*/
+.mainWordsBlock {
+	background-attachment: fixed;
+	background-image: url("../images/main words bg.png");
+	background-position: center;
+	background-size: cover;
+}
+
+.mainWordsWrapper {
+	padding: 5vh 5vw;
+}
+
+.mainWords {
+	text-align: center;
+	font-size: 2vw;
+	font-weight: 200;
+	line-height: 2.5vw;
+	letter-spacing: .1vw;
+	background-color: rgba(0, 0, 0, .6);
+	padding: 1vh 2vw;
+}
+/*Конец стилей третьего блока*/
+
+
+/*Стили для телефона*/
+@media (max-width : 1511px ) {
+	.firstBlockWords {
+		box-sizing: border-box;
+		height: 100%;
+		padding: 20vh 10vw;
+	}
+	.firstWords {
+		font-size: 5vh;
+		line-height: 8vh;
+		margin-bottom: 5vh;
+	}
+
+	.jiraiyaQuote {
+		font-size: 4vh;
+		line-height: 6vh;
+	}
+	
+	.dotaBlock {
+		font-size: 3vh;
+		line-height: 5vh;
+	}
+	
+	.firstDotaWords {
+		padding: 5vh 10vw;
+	}
+
+	.secondDotaWords {
+		padding: 15vh 10vw;
+	}
+
+	.balanar {
+		position: absolute;
+		width: 10vh;
+		bottom: 3vh;
+		left: 3vw;
+	}
+	
+	.mainWordsBlock {
+		background-position: 60%;
+	}
+
+	.mainWordsWrapper {
+		padding: 5vh 5vw;
+	}
+
+	.mainWords {
+		text-align: center;
+		font-size: 4vw;
+		font-weight: 100;
+		line-height: 6vw;
+	}
+
+}
+/*Конец стилей для телефона*/
